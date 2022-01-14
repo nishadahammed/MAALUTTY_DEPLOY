@@ -1,92 +1,191 @@
 {
-    "name": "Raganork",
-    "description": "Raganork bot - Extra featured, fully customisable WhatsApp Public/User bot.",
-    "logo": "https://www.linkpicture.com/q/rgnk.jpg",
-    "keywords": ["WhatsApp", "Userbot", "Raganork", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/souravkl11/Raganork",
-    "website":   "https://bit.ly/Raganork",
-    "success_url": "https://bit.ly/Raganork",
+    "name": "MAALUTTY_V3",
+    "description": "Maalutty is the Modified Version of WhatsAsena, Made By niin and husni with Baileys.",
+    "logo": "https://i.ibb.co/3ypJ8QW/20211209-194953.jpg",
+    "keywords": ["whatsapp", "userbot", "Maalutty", "WhatsAsena", "mwol", "bot", "ai"],
+    "repository": "https://github.com/nijin-husni/MAALUTTY_V3",
+    "website":   "https://github.com/nijin-husni/MAALUTTY_V3",
+    "success_url": "https://github.com/nijin-husni/MAALUTTY_V3",
     "stack": "container",
     "env": {
-        "RAGANORK_CODE": {
-            "description": "Raganork code (QR scan cheythappo kittiya code). Type here yours Raganork code.",
+        "MAALUTTY_CODE": {
+            "description": "Type the code when you got by scanning QR through WhatsApp.",
             "required": true
         },
-       "C_CODE": {
-            "description": "Your country code. Use 91 for India!.",
+         "BROADCAST_NAME": {
+            "description": "maalu forward ordertext",
+            "required": false,
+            "value": "✰𝙼𝙰𝙰𝙻𝚄𝚃𝚃𝚈_𝚅3✰"
+        },
+        "ALL_IMG": {
+            "description": "Change This Image Link If You Want To Change Audio Bc Thumbnail",
             "required": true,
-            "value": "91"
+            "value": "https://i.ibb.co/3ypJ8QW/20211209-194953.jpg"
+        },
+        "V_HEADER": {
+            "description": "Set the Header name logo",
+            "required": false,
+            "value": "✰𝙼𝙰𝙰𝙻𝚄𝚃𝚃𝚈_𝚅3✰"
+        },
+        "VERIFIED": {
+            "description": "Give with number jid",
+            "required": false,
+            "value": "0@s.whatsapp.net"
+        },
+        "DIALOGUE": {
+            "description": "set the Dialouge",
+            "required": true,
+            "value": "MAALUTTY_V3"
         },
         "SUDO": {
-            "description": "Leave blank if you don't know how to use it!",
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 91xxxxxxxxx,0",
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot language. English => en, Malayalam => ml, Hindi => HI,",
+            "description": "Bot language.English => en",
             "required": true,
             "value": "en"
         },
-        "M_REPLY": {
-            "description": "Auto reply when mentioned.",
-            "required": true,
-            "value":"Why do you mentioned me?"
-        },
-        "M_REPLY_VAR": {
-            "description": "Auto reply true/false.",
-            "required": true,
-            "value":"true"
-},
         "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "true"
         },
-        "ALL_IMG": {
-            "description": "Give an image link for your bot!",
-            "required": true,
-            "value": "https://i.pinimg.com/originals/0e/c8/8c/0ec88ca1469125fc11b4ce76830602f4.jpg"
+        "OWNER_NAME": {
+            "description": "Fill your name in here. it will show your name in .owner command reply",
+            "required": false,
+            "value": "💖Nijin and Husni💖"
         },
-        "DIALOGUE": {
-            "description": "Give an image link for your bot!",
+        "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": true,
-            "value": "Killadism never ends! (Change this)"
+            "value": "true"
         },
-        "ALL_CAPTION": {
-            "description": "Give your caption here. Example: Made by Raganork.",
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
             "required": true,
-            "value": "*YOUR CAPTION HERE*"
+            "value": "false"
         },
-        "VERIFIED": {
-            "description": "Jid given above the verified tick. Use 0 for official WhatsApp",
+        "WELCOME": {
+            "description": "You can select welcome as gif/pp",
+            "required": false,
+            "value": "pp"
+        },
+        "WEL_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "TAG_REPLY": {
+            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
+            "required": false
+
+        },
+        "ANTİ_LİNK": {
+            "description": "Link Blocking System.",
+            "required": false,
+            "value": "false"
+        },
+        "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by SAIDALI",
+            "required": false,
+            "value": "39999600"
+        },
+        "AUTO_BİO": {
+            "description": " Set true for auto date, time in biography.",
             "required": true,
-            "value": "0@s.whatsapp.net"
+            "value": "false"
+        },
+        "BAD_WORDS": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
         },
         "HANDLERS": {
-            "description": "Prefix for commands. (.assist, !assist ,assist)",
+            "description": "For commands.",
             "required": true,
-            "value": "^[,@#!.]"
+            "value": "^[.!;]"
         },
-        "CHATBOT": {
-            "description": "Turn your account into a chatbot!",
+        "TALKING_MAALUTTY": {
+            "description": "Turn your account into a talking maalutty!",
+            "required": true,
+            "value": "true"
+        },
+        "NO_LOG": {
+            "description": " Set true if you don't want to see error log.",
             "required": true,
             "value": "false"
         },
-        "CALL_BLOCK": {
-            "description": "Set true if you need to block people who calls you 📞.",
+        "SEND_READ": {
+            "description": "Write true if you want to throw seen.",
             "required": true,
-            "value": "false"
+            "value": "true"
+        },
+        "ALL_CAPTION": {
+            "description": "Caption for images and videos generated by pinky bot",
+            "required": true,
+            "value": "Made by 💝MAALUTTY_V3💝"
+        },
+        "HEROKU": {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "Heroku API Key. (You can find it in account settings)",
+            "description": "Heroku API Key.",
             "required": true
         },
-        "BLOCK_CHAT": {
-            "description": "Choose in which chat the bot won't work there. Ex: 91xxxx && 91xxxx-1xxx or 91xxxxx,91xxxx...",
+        "MUTE_MESSAGE": {
+            "description": "Customizable Mute Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
+        },
+        "TAG_HEADER": {
+            "description": "Heading when taging all",
             "required": false,
-            "value": "919074309534"
+            "value": "𝙼𝙰𝙰𝙻𝚄𝚃𝚃𝚈 𝚅𝙰𝙽𝙽𝚄 𝙿𝙾𝚆𝙴𝚁 𝚅𝙰𝙽𝙽𝚄🥂"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Customizable Unmute Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Customizable Block Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Customizable Unblock Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
+        },
+        "NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "917025868709"
+        },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
+        "BOT_NAME": {
+            "description": "heading for .list command reply",
+            "required": true,
+            "value": "ꪶ͢𝙼𝙰𝙰𝙻𝚄𝚃𝚃𝚈_𝚅3ꫂ⁩🥂"
         },
         "WORK_TYPE": {
-            "description": "Raganork bot Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "Maalutty Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
@@ -94,80 +193,69 @@
             "description": "Heroku APP Name.",
             "required": true
         },
+        "DEBUG": {
+            "description": "Debugging",
+            "required": true,
+            "value": "false"
+        },
         "REMOVE_BG_API_KEY": {
-            "description": "visit https://remove.bg for api key",
+            "description": "https://remove.bg",
             "required": false
         },
-        "ALIVE_MESSAGE": {
-            "description": "Customizable Alive Message! Use => default, to change back.",
-            "required": false,
-            "value": "BOT IS CURRENTLY RUNNING WITH NO ERRORS!"
+        "ALIVE_BUTTON": {
+            "description": "Customize Alive Button ",
+            "required": true,
+            "value": "ᴇɴɢᴀɴᴇʏᴜɴᴅ \n ᴍᴀᴀʟᴜᴛᴛʏ🌝"
+        },
+        "ALIVE_BUTTON2": {
+            "description": "Customize Alive Button ",
+            "required": true,
+            "value": "POWEREESH🤩"
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
-            "value": "_See you later!_"
+            "value": "default"
         },
         "SONGD": {
-            "description": "Customizable song uploading message!",
-            "required": false,
-            "value": "_Uploading song.._"
+            "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
+            "required": true,
+            "value": "*Downloading your song*"
+        },
+        "SONGU": {
+            "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
+            "required": true,
+            "value": "*Feel the song*"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
         },
         "KICKME_MESSAGE": {
             "description": "Customizable Kickme Message! Use => default, to change back.",
-            "required": false,
-            "value": "_I'm leaving, Bye!_"
-        },
-        "SONGD": {
-            "description": "Customizable song downloading message!",
             "required": true,
-            "value": "_Searching song.._"
+            "value": "default"
         },
-        "ALL_NUMBER": {
-            "description": "Type your number here",
-            "required": false,
-            "value": "wa.me/919074309534"
-        },
-        "V_HEADER": {
-            "description": "Shows on top of verified tick. Type any words here.",
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
             "required": true,
-            "value": "Type antything here"
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": true,
+            "value": "default"
         },
         "NO_ONLINE": {
-            "description": "Type true if you don't want to appear online.",
-            "required": false,
+            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
+            "required": true,
             "value": "true"
-        },
-        "IG": {
-            "description": "Your instagram link(optional)!",
-            "required": false,
-            "value": "https://instagram.com/username"
-        },
-        "OWNER_NAME": {
-            "description": "Owner name used in many commands! Type your name here.",
-            "required": false,
-            "value": "𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 𝗵𝗲𝗿𝗲"
-        },
-        "TAG_HEADER": {
-            "description": "Owner name used in many commands! Type your name here.",
-            "required": false,
-            "value": "*Hear me friends!*"
-        },   
-        "TAG_REPLY": {
-            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
-            "required": false,    
-            "value": "916282344739@s.whatsapp.net"
-        },
-        "ANTI_FAKE": {
-            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
-            "required": false,
-            "value": "true"
-        },
-        "BOT_NAME": {
-            "description": "Your bot's name. This is very important!",
-            "required": false,
-            "value": "𝓑𝓞𝓣 𝓝𝓐𝓜𝓔 𝓗𝓔𝓡𝓔"
-             
         }
     },
     "addons": [{
